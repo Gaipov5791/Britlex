@@ -1,0 +1,292 @@
+@import "vars";
+
+.contact-us {
+
+	&__title {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 80px;
+		color: $color-black;
+		text-align: center;
+		margin-bottom: 38px;
+	}
+
+	&__img {
+		width: 100%;
+		margin-bottom: 38px;
+	}
+
+	&__second-title {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 80px;
+		color: $color-black;
+		display: none;
+	}
+
+	&__text {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		text-align: center;
+		color: #8F95A5;
+		margin-bottom: 33px;
+	}
+
+	&__email {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 18px;
+		border: 1px solid $color-accent;
+		box-sizing: border-box;
+		border-radius: 5px;
+		width: 290px;
+		padding: 16px 26px;
+		margin-bottom: 17px;
+	}
+
+	&__btn {
+		background: $color-dark-grey;
+		border-radius: 5px;
+		height: 60px;
+		margin-bottom: 57px;
+
+	}
+
+	&__link {
+		padding: 20px 110px;
+		display: inline-block;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+@media (min-width: 575px) {
+	.contact-us {
+		&__inner {
+			text-align: center;
+		}
+
+		&__title {
+			font-size: 30px;
+			line-height: 80px;
+			margin-bottom: 83px;
+		}
+
+		&__img {
+			width: 358px;
+			margin-bottom: 34px;
+		}
+
+		&__text {
+			height: 72px;
+			font-size: 16px;
+			line-height: 24px;
+			text-align: center;
+			margin-bottom: 60px;
+		}
+
+		&__input {
+			display: flex;
+			margin-bottom: 144px;
+		}
+
+		&__email {
+			width: 343px;
+			height: 60px;
+			font-size: 13px;
+			line-height: 20px;
+			border: 1px solid #8F95A5;
+			box-sizing: border-box;
+			border-radius: 10px;
+		}
+
+		&__btn {
+			background: $color-dark-grey;
+			border-radius: 10px;
+			left: 368px;
+		}
+
+		&__link {
+			padding: 15px 56px;
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+}
+
+@media (min-width: 767px) {
+	.contact-us {
+
+		&__inner {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+		}
+
+		&__title {
+			display: none;
+		}
+
+		&__img {
+			width: 232px;
+			height: 210px;
+		}
+
+		&__desc {
+			text-align: left;
+		}
+
+		&__second-title {
+			display: flex;
+			font-size: 30px;
+			line-height: 80px;
+		}
+
+		&__text {
+			width: 392px;
+			height: 63px;
+			font-size: 14px;
+			line-height: 21px;
+			text-align: left;
+			margin-bottom: 26px;
+		}
+
+		&__input {
+			gap: 10px;
+			margin-bottom: 140px;
+		}
+
+		&__email {
+			width: 285px;
+			height: 50px;
+			font-size: 12px;
+			line-height: 18px;
+			padding: 16px 17px;
+			border-radius: 5px;
+		}
+
+		&__btn {
+			position: absolute;
+			width: 145px;
+			height: 50px;
+			left: 605px;
+			border-radius: 5px;
+		}
+
+		&__link {
+			padding: 15px 40px;
+			font-size: 13px;
+			line-height: 20px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.contact-us {
+		&__inner {
+			align-items: flex-start;
+			gap: 90px;
+		}
+
+		&__img {
+			width: 312px;
+			height: 281px;
+			margin-bottom: 154px;
+		}
+
+		&__second-title {
+			font-size: 36px;
+			line-height: 80px;
+		}
+
+		&__text {
+			width: 446px;
+			height: 72px;
+			font-size: 16px;
+			line-height: 24px;
+			text-align: left;
+			margin-bottom: 34px;
+		}
+
+		&__email {
+			font-size: 14px;
+			line-height: 21px;
+			padding: 20px 25px;
+			border: 1px solid $color-dark-grey;
+			box-sizing: border-box;
+			border-radius: 10px;
+		}
+
+		&__btn {
+			width: 193px;
+			height: 50px;
+			left: 774px;
+			border-radius: 10px;
+		}
+
+		&__link {
+			padding: 13px 56px;
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+}
+
+@media (min-width: 1087px) {
+	.contact-us {
+
+		&__inner {
+			margin-top: 150px;
+		}
+
+		&__img {
+			width: 477px;
+			height: 430px;
+		}
+
+		&__desc {
+			width: 60%;
+		}
+
+		&__second-title {
+			font-size: 48px;
+			line-height: 80px;
+			margin-bottom: 37px;
+		}
+
+		&__input {
+			margin-top: 50px;
+		}
+
+		&__email {
+			width: 285px;
+			height: 60px;
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		&__btn {
+			width: 175px;
+			height: 60px;
+			left: 880px;
+			border-radius: 10px;
+			padding: 5px 4px;
+		}
+
+		&__link {
+			padding: 9px 37px;
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+}

@@ -1,0 +1,172 @@
+@import "vars";
+
+.hero {
+	&__inner {
+		text-align: center;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__title {
+		margin: 16px 0 20px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 36px;
+
+		color: $color-black;
+	}
+
+	&__text {
+		margin-bottom: 35px;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		color: $color-accent;
+	}
+
+	&__btn-link {
+		display: inline-block;
+		padding: 18px 99px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: #FFFFFF;
+		background: $color-dark-grey;
+		border-radius: 5px;
+	}
+
+	&__img-lamp {
+		display: none;
+	}
+}
+
+// ------hero-media-------
+
+@media (min-width: 575px) {
+	.hero {
+
+		&__title {
+			font-size: 34px;
+			line-height: 45px;
+		}
+
+		&__text {
+			font-weight: 500;
+		}
+
+		&__btn-link {
+			font-size: 18px;
+			line-height: 27px;
+		}
+	}
+}
+
+@media (min-width: 767px) {
+
+	.hero {
+		&__inner {
+			display: flex;
+			flex-direction: row-reverse;
+		}
+
+		&__img,
+		&__desc {
+			width: 50%;
+		}
+
+		&__desc {
+			margin-right: 16px;
+			text-align: left;
+			position: relative;
+		}
+
+		&__title {
+			width: 300px;
+			font-size: 36px;
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		&__img-lamp {
+			width: 51px;
+			height: 51px;
+			position: absolute;
+			top: 96px;
+			left: 217px;
+			display: flex;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.hero {
+
+		&__title {
+			font-size: 48px;
+			line-height: 64px;
+		}
+
+		&__text {
+			margin: 27px 0 33px;
+			font-size: 20px;
+			line-height: 30px;
+		}
+
+		&__bnt-link {
+			font-size: 24px;
+			line-height: 36px;
+		}
+
+		&__img-lamp {
+			width: 80px;
+			height: 80px;
+			left: 290px;
+			top: 116px;
+		}
+	}
+}
+
+@media (min-width: 1087px) {
+	.hero {
+
+		&__img {
+			margin-top: 21px;
+		}
+
+		&__desc {
+			margin-right: 57px;
+		}
+
+		&__title {
+			margin-top: 71px;
+			font-size: 64px;
+			line-height: 80px;
+		}
+
+		&__text {
+			margin: 40px 0 61px;
+			font-size: 24px;
+			line-height: 36px;
+		}
+
+		&__btn-link {
+			font-size: 36px;
+			line-height: 54px;
+		}
+
+		&__img-lamp {
+			width: 85.24px;
+			height: 85.24px;
+			left: 380px;
+			top: 120px;
+		}
+	}
+}

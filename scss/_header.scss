@@ -1,0 +1,191 @@
+@import "vars";
+
+.header {
+
+	&__inner {
+		position: relative;
+		min-height: 108px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	&__logo-link {
+
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 36px;
+		text-decoration: none;
+		color: $color-black;
+	}
+
+	&__logo-link-gray {
+		color: #939393;
+	}
+
+	&__menu {
+		position: absolute;
+		padding: 15px 0 15px 20px;
+		top: 65px;
+		right: 0;
+		width: 100%;
+		background-color: #939393;
+		display: none;
+	}
+
+	&__item {
+		list-style: none;
+	}
+
+	&__link {
+		font-size: 20px;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	&__item+&__item {
+		margin-top: 10px;
+	}
+
+	&__btn {
+		position: absolute;
+		margin: 20px 20px 0 0;
+		top: 65px;
+		right: 0;
+
+		display: none;
+	}
+
+	&__btn-link {
+		display: inline-block;
+		padding: 12px 20px;
+		text-decoration: none;
+		color: $color-black;
+		border: 2px solid $color-dark-grey;
+		border-radius: 5px;
+		background-color: #fff;
+
+	}
+
+	&__toggle-img {
+		width: 34px;
+		height: 19px;
+	}
+}
+
+// ------header-media------
+
+@media (min-width: 575px) {
+	.header {
+		&__inner {
+			min-height: 123px;
+		}
+
+		&__logo-link,
+		&__logo-link-grey {
+			font-size: 30px;
+			line-height: 45px;
+		}
+
+		&__menu {
+			position: static;
+
+		}
+
+		&__toggle {
+			padding-right: 18px;
+		}
+
+		&__toggle-img {
+			width: 43px;
+			height: 24px;
+			margin-top: 25px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+
+		&__inner {
+			min-height: 100px;
+			align-items: center;
+		}
+
+		&__logo-link {
+			font-size: 30px;
+			line-height: 45px;
+		}
+
+		&__nav {
+			flex: 1 1 auto;
+		}
+
+		&__menu {
+			font-size: 16px;
+			line-height: 24px;
+			display: flex;
+			position: static;
+			padding: 0 90px 0 0;
+			justify-content: flex-end;
+			background-color: #fff;
+		}
+
+		&__item+&__item {
+			margin-top: 0;
+			margin-left: 20px;
+		}
+
+		&__link {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 24px;
+			color: $color-black;
+		}
+
+		&__btn {
+			position: static;
+			display: flex;
+			border: 2px solid #263238;
+			box-sizing: border-box;
+			border-radius: 5px;
+			margin: 0;
+		}
+
+		&__btn-link {
+			font-size: 18px;
+			line-height: 27px;
+			padding: 12px 40px;
+		}
+
+		&__toggle-img {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 1087px) {
+	.header {
+
+		&__inner {
+			height: 130px;
+		}
+
+		&__logo-link {
+			font-size: 36px;
+			line-height: 54px;
+		}
+
+		&__menu {
+			font-size: 20px;
+			line-height: 30px;
+		}
+
+		&__btn-link {
+			font-size: 24px;
+			line-height: 36px;
+		}
+	}
+}
